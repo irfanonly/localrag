@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+
+# Environment and secrets
+.env
+*.key
+
+# Local data and indexes (keep only public sample docs in data/samples)
+data/private/
+chroma_db/
+*.faiss
+*.sqlite3
+
+# Models and caches
+models/
+.cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
