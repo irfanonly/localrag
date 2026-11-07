@@ -4,6 +4,8 @@
 
 ![demo](docs/demo.gif) <!-- add later -->
 
+
+
 ## The problem
 LLMs do not know your private documents and may hallucinate. Ctrl+F only matches exact words.
 LocalRAG finds the relevant passages by meaning, answers only from them, and shows where each answer came from.
