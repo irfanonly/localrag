@@ -10,6 +10,11 @@
 LLMs do not know your private documents and may hallucinate. Ctrl+F only matches exact words.
 LocalRAG finds the relevant passages by meaning, answers only from them, and shows where each answer came from.
 
+## Sample data
+Public Saudi labor law documents (Arabic and English), downloaded from official
+sources. See `data/samples/sources.csv` for origins and versions.
+English texts are translations for guidance; the Arabic text governs.
+
 ## Features (planned)
 - [ ] PDF ingestion with page-level citations
 - [ ] Arabic and English support
