@@ -36,3 +36,8 @@ def test_chunk_pages_keeps_metadata_and_skips_blank_pages():
     assert len(chunks) == 1
     assert chunks[0].page == 2
     assert chunks[0].chunk_id == "a.pdf:p2:c0"
+
+
+def test_chunk_pages_propagates_language():
+    pages = [Page("a.pdf", 1, "\n".join(["some real text here"] * 5), "ar")]
+    assert chunk_pages(pages)[0].language == "ar"

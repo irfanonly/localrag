@@ -14,6 +14,7 @@ class Chunk:
     source: str
     page: int
     text: str
+    language: str = "unknown"
 
 
 def _units(text: str, limit: int) -> Iterator[str]:
@@ -74,6 +75,7 @@ def chunk_pages(pages: list[Page], chunk_size: int = 1200, overlap: int = 200) -
                     source=page.source,
                     page=page.page,
                     text=text,
+                    language=page.language,
                 )
             )
     return chunks
